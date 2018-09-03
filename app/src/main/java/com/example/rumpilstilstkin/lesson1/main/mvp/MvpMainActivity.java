@@ -37,7 +37,7 @@ public class MvpMainActivity extends AppCompatActivity implements MainView, View
                 break;
             }
             case R.id.btnCounter2: {
-                mPresenter.incHours();
+                mPresenter.incMin();
                 break;
             }
             case R.id.btnCounter3:{

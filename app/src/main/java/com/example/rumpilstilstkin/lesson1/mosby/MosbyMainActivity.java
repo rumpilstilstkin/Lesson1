@@ -10,7 +10,8 @@ import com.example.rumpilstilstkin.lesson1.R;
 import com.hannesdorfmann.mosby3.mvp.MvpActivity;
 
 
-public class MosbyMainActivity extends MvpActivity<MosbyExampleView, Presenter> implements MosbyExampleView, View.OnClickListener {
+public class MosbyMainActivity extends MvpActivity<MosbyExampleView, Presenter>
+        implements MosbyExampleView, View.OnClickListener {
 
     private Button btnCounter1;
     private Button btnCounter2;
@@ -26,6 +27,7 @@ public class MosbyMainActivity extends MvpActivity<MosbyExampleView, Presenter> 
         btnCounter1.setOnClickListener(this);
         btnCounter2.setOnClickListener(this);
         btnCounter3.setOnClickListener(this);
+
     }
 
     @NonNull
