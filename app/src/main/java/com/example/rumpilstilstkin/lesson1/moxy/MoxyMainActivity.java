@@ -10,7 +10,8 @@ import com.arellomobile.mvp.presenter.InjectPresenter;
 import com.example.rumpilstilstkin.lesson1.R;
 
 
-public class MoxyMainActivity extends MvpAppCompatActivity implements MoxyExampleView, View.OnClickListener{
+public class MoxyMainActivity extends MvpAppCompatActivity
+        implements MoxyExampleView, View.OnClickListener {
 
     @InjectPresenter
     Presenter presenter;
