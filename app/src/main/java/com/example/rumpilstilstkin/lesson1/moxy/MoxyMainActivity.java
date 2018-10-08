@@ -2,6 +2,7 @@ package com.example.rumpilstilstkin.lesson1.moxy;
 
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -34,7 +35,18 @@ public class MoxyMainActivity extends MvpAppCompatActivity
 
     @Override
     public void onClick(View v) {
-        presenter.buttonClick(v.getId());
+        switch (v.getId()) {
+            case R.id.btnCounter1:
+                setButtonText(1, presenter.updateData(0));
+                break;
+            case R.id.btnCounter2:
+                setButtonText(2, presenter.updateData(1));
+                break;
+            case R.id.btnCounter3:
+                setButtonText(3, presenter.updateData(2));
+                break;
+        }
+
     }
 
     @Override
