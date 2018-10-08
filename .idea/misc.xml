@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
     <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
@@ -30,6 +31,9 @@
 =======
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
 >>>>>>> parent of 8ad2527... 1st build after downloading
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+>>>>>>> parent of aa02531... + 1. В последнем проекте (MVP) заложена серьезная неточность, которая не позволит полностью покрыть презентер тестами. А именно: это ссылки на android-фреймворк. В методе buttonClick используются конструкции, типа R.id.btnCounter1, чего не должно быть в pure java. Вам нужно переделать код этого метода (а также вызывающего метода Представления) так, чтобы в Презентере остался только чистый java-код.
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
