@@ -37,13 +37,13 @@ public class MoxyMainActivity extends MvpAppCompatActivity
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnCounter1:
-                setButtonText(1, presenter.updateData(0));
+                presenter.getViewState().setButtonText(1, presenter.updateData(0));
                 break;
             case R.id.btnCounter2:
-                setButtonText(2, presenter.updateData(1));
+                presenter.getViewState().setButtonText(2, presenter.updateData(1));
                 break;
             case R.id.btnCounter3:
-                setButtonText(3, presenter.updateData(2));
+                presenter.getViewState().setButtonText(3, presenter.updateData(2));
                 break;
         }
 
