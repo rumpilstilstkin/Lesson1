@@ -38,7 +38,21 @@ public class MosbyMainActivity extends MvpActivity<MosbyExampleView, Presenter>
 
     @Override
     public void onClick(View v) {
-        presenter.buttonClick(v.getId());
+     //   presenter.buttonClick(v.getId());
+        switch (v.getId()) {
+            case R.id.btnCounter1: {
+                presenter.incSec();
+                break;
+            }
+            case R.id.btnCounter2: {
+                presenter.incMin();
+                break;
+            }
+            case R.id.btnCounter3: {
+                presenter.incHours();
+                break;
+            }
+        }
     }
 
     @Override
