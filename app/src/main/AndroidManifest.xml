@@ -13,16 +13,11 @@
         <activity android:name=".main.mvc.MvcMainActivity">
         </activity>
 
-        <activity android:name=".main.mvp.MvpMainActivity">
+        <activity android:name=".main.mvp.MvpMainActivity">q
 
         </activity>
 
         <activity android:name=".mosby.MosbyMainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity android:name=".moxy.MoxyMainActivity">
