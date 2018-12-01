@@ -13,7 +13,7 @@
         <activity android:name=".main.mvc.MvcMainActivity">
         </activity>
 
-        <activity android:name=".main.mvp.MvpMainActivity">
+        <activity android:name=".main.mvp.MvpMainActivity">q
 
         </activity>
 
