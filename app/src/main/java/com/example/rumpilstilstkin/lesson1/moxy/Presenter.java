@@ -13,12 +13,15 @@ public class Presenter extends MvpPresenter<MoxyView> {
     private static final int SECOND_MODEL_INDEX = 1;
     private static final int THIRD_MODEL_INDEX = 2;
 
-    private ModelImpl mModel;
+    private Model mModel;
+
+    public Presenter(Model model) {
+        this.mModel = model;
+    }
 
     @Override
     protected void onFirstViewAttach() {
         super.onFirstViewAttach();
-        mModel = new ModelImpl();
         Log.d("Dto", "first attach");
     }
 

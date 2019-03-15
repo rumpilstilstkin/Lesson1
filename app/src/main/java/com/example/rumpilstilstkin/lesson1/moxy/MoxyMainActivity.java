@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import com.arellomobile.mvp.MvpAppCompatActivity;
 import com.arellomobile.mvp.presenter.InjectPresenter;
+import com.arellomobile.mvp.presenter.ProvidePresenter;
 import com.example.rumpilstilstkin.lesson1.R;
 
 
@@ -16,6 +17,10 @@ public class MoxyMainActivity extends MvpAppCompatActivity
     @InjectPresenter
     Presenter presenter;
 
+    @ProvidePresenter
+    Presenter getPresenter() {
+        return new Presenter(new ModelImpl());
+    }
 
     private Button btnCounter1;
     private Button btnCounter2;
