@@ -34,7 +34,17 @@ public class MoxyMainActivity extends MvpAppCompatActivity
 
     @Override
     public void onClick(View v) {
-        presenter.buttonClick(v.getId());
+        switch (v.getId()) {
+            case R.id.btnCounter1:
+                presenter.getViewState().setButtonText(1, presenter.buttonClick(0));
+                break;
+            case R.id.btnCounter2:
+                presenter.getViewState().setButtonText(2, presenter.buttonClick(1));
+                break;
+            case R.id.btnCounter3:
+                presenter.getViewState().setButtonText(3, presenter.buttonClick(2));
+                break;
+        }
     }
 
     @Override
